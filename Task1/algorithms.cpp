@@ -72,20 +72,14 @@ void deleteAllWithName(product*& arr, int& n) {
     std::cout << "Введите наименование, все товары с которым нужно удалить.\n";
     char str[20];
     std::cin >> str;
-    int cnt = 0;
     for (int i = 0; i < n; i++) {
         if (strcmp(str, arr[i].name) == 0) {
-            cnt++;
-        }
-        else {
-            int j = i;
-            while (j > 0 && arr[j - 1].units == -1) {
-                std::swap(arr[j - 1], arr[j]);
-                j--;
+            n--;
+            for (int j = i; j < n; j++) {
+                std::swap(arr[i], arr[i + 1]);
             }
         }
     }
-    n -= cnt;
     arr = (product*)realloc(arr, n * sizeof(product));
 }
 
