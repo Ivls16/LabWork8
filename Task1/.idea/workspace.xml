@@ -24,24 +24,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f0dc5ca-6890-498c-b7c2-1abc9bc64568" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Task2/algorithm.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Task2/database.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Task2/item.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Task2/item.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Task2/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_functions.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Task2/item_functions.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Task2/item_functions.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/algorithms.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-9d32064bec54b4aea007.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2024-12-13T17-02-00-0806.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/binary.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/binary.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-fe1407e6951dbb59cae4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-c8729b7eba2a66a844ff.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2024-12-16T16-50-41-0705.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-Task1-Debug-47015392b84c67fd059f.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Task1.dir/algorithms.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Task1.dir/algorithms.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Task1.dir/binary.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Task1.dir/binary.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Task1.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Task1.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Task1.dir/product.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Task1.dir/product.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Task1" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Task1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/products.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/products.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/product_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product.h" beforeDir="false" afterPath="$PROJECT_DIR$/product.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task2/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Task2/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task2/algorithm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Task2/algorithm.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task2/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-8634aed230d97fdc82c6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task2/cmake-build-debug/.cmake/api/v1/reply/index-2024-12-16T14-23-41-0397.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task2/cmake-build-debug/.cmake/api/v1/reply/target-Task2-Debug-f96f01fc6d3568ba1467.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task2/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../Task2/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task2/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../Task2/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task2/cmake-build-debug/CMakeFiles/Task2.dir/algorithm.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../Task2/cmake-build-debug/CMakeFiles/Task2.dir/algorithm.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task2/cmake-build-debug/CMakeFiles/Task2.dir/database.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../Task2/cmake-build-debug/CMakeFiles/Task2.dir/database.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task2/cmake-build-debug/CMakeFiles/Task2.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../Task2/cmake-build-debug/CMakeFiles/Task2.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task2/cmake-build-debug/Task2" beforeDir="false" afterPath="$PROJECT_DIR$/../Task2/cmake-build-debug/Task2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task2/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Task2/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task2/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../Task2/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task2/database.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Task2/database.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task2/item.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task2/item.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Task2/item.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task2/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Task2/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,11 +120,17 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;structure.view.defaults.are.configured&quot;: &quot;true&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RunManager">
     <configuration name="Task1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Task1" TARGET_NAME="Task1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Task1" RUN_TARGET_NAME="Task1">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -117,6 +147,12 @@
       <workItem from="1734367839624" duration="5000" />
       <workItem from="1734367852637" duration="454000" />
       <workItem from="1734368328382" duration="33000" />
+      <workItem from="1734634416388" duration="2940000" />
+      <workItem from="1734674647751" duration="65000" />
+      <workItem from="1734674781020" duration="20000" />
+      <workItem from="1734675067057" duration="8000" />
+      <workItem from="1734675202083" duration="1472000" />
+      <workItem from="1734677292838" duration="212000" />
     </task>
     <servers />
   </component>

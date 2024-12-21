@@ -1,6 +1,6 @@
 #include <iostream>
 #include <fstream>
-#include "item.h"
+#include "item_functions.h"
 
 void clearDatabase() {
     std::ofstream out;
@@ -18,7 +18,7 @@ void displayDatabase() {
     in >> buffer;
     item* arr = new item[n];
     for (int i = 0; i < n; i++) {
-        arr[i].readWithoutFeedback(in);
+        readWithoutFeedback(arr[i], in);
     }
     displayItems(arr, n);
     delete[] arr;
@@ -28,7 +28,7 @@ void displayDatabase() {
 void addToDatabase() {
     std::cout << "Введите данные о предмете, который необходимо добавить в базу данных.\n";
     item p;
-    p.read();
+    read(p);
     std::fstream io;
     io.open("database.txt", std::ios::in | std::ios::out);
     int n;
@@ -36,7 +36,7 @@ void addToDatabase() {
     n++;
     io.seekp(NUMBER_BUFFER + ITEM_BUFFER * (n - 1));
     io << ' ';
-    p.writeRaw(io);
+    writeRaw(p, io);
     io.seekp(0);
     io << n;
     for (int i = 0; i < 8 - intLen(n); i++) {
@@ -63,9 +63,9 @@ void deleteFromDatabase() {
     for (int i = m; i < n - 1; i++) {
         io.seekp(NUMBER_BUFFER + ITEM_BUFFER * (i + 1));
         item p;
-        p.readWithoutFeedback(io);
+        readWithoutFeedback(p, io);
         io.seekp(NUMBER_BUFFER + ITEM_BUFFER * i);
-        p.writeRaw(io);
+        writeRaw(p, io);
     }
     n--;
     io.seekp(0);
@@ -94,10 +94,10 @@ void changeInDatabase() {
     std::cin >> m;
     item p;
     io.seekp(NUMBER_BUFFER + ITEM_BUFFER * m);
-    p.readWithoutFeedback(io);
-    p.changeField();
+    readWithoutFeedback(p, io);
+    changeField(p);
     io.seekp(NUMBER_BUFFER + ITEM_BUFFER * m);
-    p.writeRaw(io);
+    writeRaw(p, io);
     std::cout << "Информация о предмете успешно обновлена.\n";
     io.close();
 }

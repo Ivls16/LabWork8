@@ -7,32 +7,4 @@ typedef struct item_t {
         int ready, left;
     } timer{};
     char brand[20]{}, type[20]{};
-
-    bool operator > (item_t) const;
-
-    void read();
-
-    void display() const;
-    void displayWithoutType() const;
-
-    void readWithoutFeedback(std::fstream&);
-    void writeRaw(std::fstream&);
-
-    void changeField();
 } item;
-
-void addNItems(item*&, int&);
-void deleteFromArray(item*&, int&);
-void displayItems(item*&, int&);
-void editItem(item*&, int&);
-void displayItemsStats(item*&, int&);
-
-void clearDatabase();
-void displayDatabase();
-void addToDatabase();
-void deleteFromDatabase();
-void changeInDatabase();
-
-int intLen(int);
-
-const int NUMBER_BUFFER = 10, ITEM_BUFFER = 68;

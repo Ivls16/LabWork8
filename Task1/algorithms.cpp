@@ -1,11 +1,11 @@
 #include <iostream>
 #include <cstring>
-#include "product.h"
+#include "product_functions.h"
 
 void sort(product* arr, int n) {
     for (int i = 0; i < n; i++) {
         for (int j = i - 1; j >= 0; j--) {
-            if (arr[j] < arr[j + 1]) {
+            if (arr[j].price < arr[j + 1].price) {
                 std::swap(arr[j], arr[j + 1]);
             }
             else {
@@ -22,7 +22,7 @@ void addNProducts(product*& arr, int& n) {
     n += m;
     arr = (product*)realloc(arr, n * sizeof(product));
     for (int i = n - m; i < n; i++) {
-        arr[i].read();
+        read(arr[i]);
     }
 }
 
@@ -31,7 +31,7 @@ void addUntilBeer(product*& arr, int& n) {
     while (true) {
         n++;
         arr = (product*)realloc(arr, n * sizeof(product));
-        arr[n - 1].read();
+        read(arr[n - 1]);
         if (strcmp(arr[n - 1].name, "пиво") == 0) {
             break;
         }
@@ -39,11 +39,16 @@ void addUntilBeer(product*& arr, int& n) {
 }
 
 void addUntilEnd(product*& arr, int& n) {
-    std::cout << "Новые товары будут добавляться, пока пользователь не введет 'конец'.\n";
     while (true) {
+        std::cout << "Хотите продолжить ввод?(0 или 1): ";
+        bool cont;
+        std::cin >> cont;
+        if (!cont) {
+            break;
+        }
         n++;
         arr = (product*)realloc(arr, n * sizeof(product));
-        arr[n - 1].read();
+        read(arr[n - 1]);
         if (strcmp(arr[n - 1].name, "конец") == 0) {
             break;
         }
@@ -53,7 +58,7 @@ void addUntilEnd(product*& arr, int& n) {
 void displayAll(product*& arr, int n) {
     for (int i = 0; i < n; i++) {
         std::cout << "Товар " << i << ": ";
-        arr[i].display();
+        display(arr[i]);
     }
 }
 
@@ -63,7 +68,7 @@ void findAllWithName(product*& arr, int& n) {
     std::cin >> str;
     for (int i = 0; i < n; i++) {
         if (strcmp(str, arr[i].name) == 0) {
-            arr[i].display();
+            display(arr[i]);
         }
     }
 }
@@ -87,7 +92,7 @@ void sortAndShow(product*& arr, int& n) {
     sort(arr, n);
     for (int i = 0; i < n; i++) {
         if (arr[i].price > 100.341) {
-            arr[i].display();
+            display(arr[i]);
         }
         else {
             break;

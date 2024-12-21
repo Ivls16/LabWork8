@@ -1,5 +1,5 @@
 #include <iostream>
-#include "product.h"
+#include "product_functions.h"
 
 FILE *databaseFile = fopen("products.bin", "rb+");
 
@@ -26,13 +26,23 @@ bool emptyDb() {
     return n == 0;
 }
 
+void truncateFile(int n) {
+    fseek(databaseFile, 0L, SEEK_SET);
+    char* ch = (char*)malloc(4 + n * sizeof(product));
+    fread(ch, sizeof(char), 4 + n * sizeof(product), databaseFile);
+    FILE *db = fopen("products.bin", "wb");
+    fwrite(ch, sizeof(char), 4 + n * sizeof(product), db);
+    fclose(db);
+    free(ch);
+}
+
 void displayDatabase() {
     std::cout << "Товары, хранящиеся в базе данных:\n";
     int n = 0;
     product* arr = getProducts(n);
     for (int i = 0; i < n; i++) {
         std::cout << "Товар " << i << ": ";
-        arr[i].display();
+        display(arr[i]);
     }
     delete[] arr;
 }
@@ -51,7 +61,7 @@ void addToDatabase() {
     }
     std::cout << "Введите данные о товаре, который хотите добавить в базу.\n";
     product p;
-    p.read();
+    read(p);
     fseek(databaseFile, 0L, SEEK_SET);
     fread(&n, sizeof(int), 1, databaseFile);
     n++;
@@ -85,6 +95,7 @@ void deleteFromDatabase() {
         fseek(databaseFile, -(long)sizeof(product) * 2, SEEK_CUR);
         fwrite(&p, sizeof(product), 1, databaseFile);
     }
+    truncateFile(n);
     std::cout << "Товар удален из базы.\n";
 }
 
@@ -100,7 +111,7 @@ void editDatabase() {
     fseek(databaseFile, 4L + ndel * (long)sizeof(product), SEEK_SET);
     product p;
     fread(&p, sizeof(product), 1, databaseFile);
-    p.changeField();
+    changeField(p);
     fseek(databaseFile, -(long)sizeof(product), SEEK_CUR);
     fwrite(&p, sizeof(product), 1, databaseFile);
     std::cout << "Информация о товаре изменена.\n";

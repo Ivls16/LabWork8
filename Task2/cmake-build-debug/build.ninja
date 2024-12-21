@@ -55,12 +55,6 @@ build CMakeFiles/Task2.dir/main.cpp.o: CXX_COMPILER__Task2_unscanned_Debug /home
   OBJECT_DIR = CMakeFiles/Task2.dir
   OBJECT_FILE_DIR = CMakeFiles/Task2.dir
 
-build CMakeFiles/Task2.dir/item.cpp.o: CXX_COMPILER__Task2_unscanned_Debug /home/ivxn/Документы/453502/ОАиП/LR8/Task2/item.cpp || cmake_object_order_depends_target_Task2
-  DEP_FILE = CMakeFiles/Task2.dir/item.cpp.o.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/Task2.dir
-  OBJECT_FILE_DIR = CMakeFiles/Task2.dir
-
 build CMakeFiles/Task2.dir/algorithm.cpp.o: CXX_COMPILER__Task2_unscanned_Debug /home/ivxn/Документы/453502/ОАиП/LR8/Task2/algorithm.cpp || cmake_object_order_depends_target_Task2
   DEP_FILE = CMakeFiles/Task2.dir/algorithm.cpp.o.d
   FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
@@ -73,6 +67,12 @@ build CMakeFiles/Task2.dir/database.cpp.o: CXX_COMPILER__Task2_unscanned_Debug /
   OBJECT_DIR = CMakeFiles/Task2.dir
   OBJECT_FILE_DIR = CMakeFiles/Task2.dir
 
+build CMakeFiles/Task2.dir/item_functions.cpp.o: CXX_COMPILER__Task2_unscanned_Debug /home/ivxn/Документы/453502/ОАиП/LR8/Task2/item_functions.cpp || cmake_object_order_depends_target_Task2
+  DEP_FILE = CMakeFiles/Task2.dir/item_functions.cpp.o.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/Task2.dir
+  OBJECT_FILE_DIR = CMakeFiles/Task2.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Task2
@@ -81,7 +81,7 @@ build CMakeFiles/Task2.dir/database.cpp.o: CXX_COMPILER__Task2_unscanned_Debug /
 #############################################
 # Link the executable Task2
 
-build Task2: CXX_EXECUTABLE_LINKER__Task2_Debug CMakeFiles/Task2.dir/main.cpp.o CMakeFiles/Task2.dir/item.cpp.o CMakeFiles/Task2.dir/algorithm.cpp.o CMakeFiles/Task2.dir/database.cpp.o
+build Task2: CXX_EXECUTABLE_LINKER__Task2_Debug CMakeFiles/Task2.dir/main.cpp.o CMakeFiles/Task2.dir/algorithm.cpp.o CMakeFiles/Task2.dir/database.cpp.o CMakeFiles/Task2.dir/item_functions.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/Task2.dir
   POST_BUILD = :

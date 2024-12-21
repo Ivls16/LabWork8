@@ -1,5 +1,5 @@
 #include <iostream>
-#include "product.h"
+#include "product_functions.h"
 
 int main() {
     int n = 0;

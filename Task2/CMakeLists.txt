@@ -3,8 +3,11 @@ project(Task2)
 
 set(CMAKE_CXX_STANDARD 14)
 
+#set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fsanitize=thread")
+
 add_executable(Task2
         main.cpp
-        item.cpp
         algorithm.cpp
-        database.cpp)
+        database.cpp
+        item_functions.h
+        item_functions.cpp)
